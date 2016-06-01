@@ -5,7 +5,7 @@
 ## Login   <valeru_r@epitech.net>
 ## 
 ## Started on  Wed Dec 16 09:34:10 2015 Reever Valerus
-## Last update Wed Jun  1 16:30:06 2016 Reever Valerus
+## Last update Wed Jun  1 20:49:33 2016 Reever Valerus
 ##
 
 CC	=	gcc
@@ -19,9 +19,9 @@ RM	=	rm -f
 CFLAGS	+=	-I../include
 CFLAGS	+=	-g3
 
-SRCS	=	fonctions_lib.c \
+SRCS	=	lib_functions.c \
 		algo.c \
-		fonctions_tab.c \
+		tab_functions.c \
 		lib_functions2.c \
 		get_line.c \
 		open_read.c \

@@ -5,7 +5,7 @@
 ** Login   <valeru_r@epitech.net>
 ** 
 ** Started on  Sun Dec 20 17:24:57 2015 Reever Valerus
-** Last update Wed Jun  1 16:35:40 2016 Reever Valerus
+** Last update Wed Jun  1 20:19:06 2016 Reever Valerus
 */
 
 #include "BSQ.h"
@@ -163,9 +163,11 @@ void	print_map_final(char **tab, int rowls, int cols)
   int	j;
 
   i = 0;
+  my_putstr("\n\n");
   while (i != rowls)
     {
       j = 0;
+      my_putstr("\t\t");
       while (j != cols)
 	{
 	  my_putchar(tab[i][j]);
@@ -174,4 +176,5 @@ void	print_map_final(char **tab, int rowls, int cols)
       my_putchar('\n');
       i++;
     }
+  my_putchar('\n');
 }

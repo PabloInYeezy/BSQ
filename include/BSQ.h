@@ -5,7 +5,7 @@
 ** Login   <valeru_r@epitech.net>
 ** 
 ** Started on  Wed Dec 16 09:40:51 2015 Reever Valerus
-** Last update Wed Jun  1 16:36:14 2016 Reever Valerus
+** Last update Wed Jun  1 20:51:47 2016 Reever Valerus
 */
 
 #include <stdlib.h>
@@ -52,11 +52,11 @@ typedef struct		s_taille
 }			t_taille;
 
 void	my_putchar(char c);
+int	my_putstr(char *str);
 int	my_strlen(char *str);
 char	**mem_alloc_2d_array(int nb_rowls, int nb_cols);
 int	my_put_nbr(int nb);
 int	**creat_tab_int(int rowls, int cols);
-int	calc_file(char *str);
 int	calc_cols(char *str);
 int	calc_rowls(char *str);
 char	**creat_tab(char *buff);

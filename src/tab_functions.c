@@ -5,23 +5,10 @@
 ** Login   <valeru_r@epitech.net>
 ** 
 ** Started on  Wed Dec 16 14:50:25 2015 Reever Valerus
-** Last update Tue May 10 15:10:03 2016 Reever Valerus
+** Last update Wed Jun  1 20:52:25 2016 Reever Valerus
 */
 
-#include <stdlib.h>
 #include "BSQ.h"
-
-int     calc_file(char *str)
-{
-  int   cols;
-  int   rowls;
-  int   result;
-
-  cols = calc_cols(str);
-  rowls = calc_rowls(str);
-  result = rowls * cols;
-  return (result);
-}
 
 int     calc_cols(char *str)
 {
@@ -69,7 +56,6 @@ char    **creat_tab(char *buff)
   int	**tab2;
 
   init_structs(&data, &cre_tab, buff);
-  //  tab2 = creat_tab_int(data.rowls, data.cols);
   while (cre_tab.index_rowl != data.rowls)
     {
       if (buff[cre_tab.index_buff] != '\n')

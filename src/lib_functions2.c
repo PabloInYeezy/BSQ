@@ -5,7 +5,7 @@
 ** Login   <valeru_r@epitech.net>
 ** 
 ** Started on  Wed Jun  1 16:14:30 2016 Reever Valerus
-** Last update Wed Jun  1 16:32:14 2016 Reever Valerus
+** Last update Wed Jun  1 20:54:15 2016 Reever Valerus
 */
 
 #include "BSQ.h"
@@ -68,6 +68,8 @@ int		my_getnbr(char *str)
 
   idx = 0;
   neg = 0;
+  if (str == NULL)
+    return (0);
   while (str[idx])
     {
       if (str[idx] == '-')
